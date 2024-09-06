@@ -12,6 +12,9 @@ export default defineConfig({
     tailwind(),
     react(),
     clerk({
+      experimental: {
+        persistClient: true,
+      },
       afterSignInUrl: "/",
       afterSignUpUrl: "/",
     }),
